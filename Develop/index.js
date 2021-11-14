@@ -5,7 +5,7 @@ const util = require("util");
 const generateMarkdown = require('./utils/generateMarkdown');
 
 // TODO: Create an array of questions for user input
-const questions = [];
+function init() {
 inquirer.prompt([
     {
     type: 'input',
@@ -34,14 +34,9 @@ inquirer.prompt([
     },
     {
     type: 'list',
-    name: 'License',
+    name: 'license',
     message: 'Add a license:' ,
     choices: ['Unlicense', 'MIT', 'GPLv2', 'Apache', 'GPLv3', 'BSD 3-clause', 'BSD 2-clause', 'LGPLv3', 'AGPLv3'],    
-    },
-    {
-    type: 'input',
-    name: 'Badges',
-    message: 'Add a badge'
     },
     {
     type: 'input',
@@ -49,19 +44,19 @@ inquirer.prompt([
     message: 'List your features:'
     },
     {
-    type: 'input',
-    name: 'Contributing',
+    type: 'confirm',
+    name: 'Contribution',
     message: 'Want others to contribute?'
     },
     {
     type: 'input',
     name: 'Test',
-    message: 'Provide examples on how to test?'
+    message: 'Provide examples on how to test:'
     },
     {
     type: 'input',
     name: 'github',
-    message: 'Provide an github: '
+    message: 'Provide an github:'
     },
     {
     type: 'input',
@@ -73,13 +68,13 @@ inquirer.prompt([
     fs.writeFile("README.md", generateMarkdown(data), function(err) {
         if (err) {
         return console.log(err);
-        }
+        } else{
 
         console.log('Success!');
+    }
     });
 });
-// TODO: Create a function to initialize app
-function init() {}
+}
 
 // Function call to initialize app
 init();
