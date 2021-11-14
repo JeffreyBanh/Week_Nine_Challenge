@@ -2,7 +2,7 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
 const util = require("util");
-const generatorMarkdown = require('./util/generateMarkdown');
+const generateMarkdown = require('./utils/generateMarkdown');
 
 // TODO: Create an array of questions for user input
 const questions = [];
@@ -15,46 +15,69 @@ inquirer.prompt([
     {
     type: 'input',
     name: 'description',
-    message: 'Add a description to the project'
+    message: 'Describe your project:'
     },
     {
     type: 'input',
     name: 'Installation',
-    message: 'Add a description to the project'
+    message: 'What are the steps required to install your project?'
     },
     {
     type: 'input',
     name: 'Usage',
-    message: 'Add a description to the project'
+    message: 'Provide instructions and examples for use:'
     },
     {
     type: 'input',
     name: 'Credits',
-    message: 'Add a description to the project'
+    message: 'List your collaborators with links to their GitHub profiles:'
     },
     {
-    type: 'input',
+    type: 'list',
     name: 'License',
-    message: 'Add a description to the project'
+    message: 'Add a license:' ,
+    choices: ['Unlicense', 'MIT', 'GPLv2', 'Apache', 'GPLv3', 'BSD 3-clause', 'BSD 2-clause', 'LGPLv3', 'AGPLv3'],    
     },
     {
     type: 'input',
     name: 'Badges',
-    message: 'Add a description to the project'
+    message: 'Add a badge'
+    },
+    {
+    type: 'input',
+    name: 'Features',
+    message: 'List your features:'
     },
     {
     type: 'input',
     name: 'Contributing',
-    message: 'Add a description to the project'
+    message: 'Want others to contribute?'
     },
     {
     type: 'input',
     name: 'Test',
-    message: 'Add a description to the project'
+    message: 'Provide examples on how to test?'
     },
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+    {
+    type: 'input',
+    name: 'github',
+    message: 'Provide an github: '
+    },
+    {
+    type: 'input',
+    name: 'email',
+    message: 'Provide an email:'
+    },
+]) 
+.then(function(data) {
+    fs.writeFile("README.md", generateMarkdown(data), function(err) {
+        if (err) {
+        return console.log(err);
+        }
 
+        console.log('Success!');
+    });
+});
 // TODO: Create a function to initialize app
 function init() {}
 
