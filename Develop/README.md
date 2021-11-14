@@ -9,7 +9,6 @@
 * [Installation](#Installation)
 * [Usage](#Usage)
 * [Credits](#Credits)
-* [Contributions](#Contributions)
 * [Tests](#Tests)
 * [Questions](#Questions)
 * [License](#License)
@@ -27,8 +26,8 @@
  example
 
 # Questions
-Email: example
-Github: example
+Email: banh.jeff@gmail.com
+Github: jeffreybanh@github.com
 
 # License
  This repository is released under the [MIT License](https://opensource.org/licenses/MIT)

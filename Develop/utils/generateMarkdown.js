@@ -70,7 +70,6 @@ return(
     `* [Installation](#Installation)\n` +
     `* [Usage](#Usage)\n` +
     `* [Credits](#Credits)\n` +
-    `* [Contributions](#Contributions)\n` +
     `* [Tests](#Tests)\n` +
     `* [Questions](#Questions)\n` +
     `* [License](#License)\n` +
