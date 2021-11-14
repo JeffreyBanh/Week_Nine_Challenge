@@ -31,8 +31,3 @@ Github: jeffreybanh@github.com
 
 # License
  This repository is released under the [MIT License](https://opensource.org/licenses/MIT)
-
-
-
-https://user-images.githubusercontent.com/81596406/141670271-65edea55-c1c8-43b6-9b46-74c867ddc61c.mp4
-
