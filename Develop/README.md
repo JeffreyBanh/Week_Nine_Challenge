@@ -1,10 +1,10 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](code_of_conduct.md)
-# example
+# Sample run
 
 # Description
- example
+ sample running the read me generator
 # Table of Contents
 * [Installation](#Installation)
 * [Usage](#Usage)
@@ -14,16 +14,16 @@
 * [License](#License)
 
 # Installation
- example
+ a
 
 # Usage
- example
+ a
 
 # Credits
- example
+ a
 
 # Tests
- example
+ a
 
 # Questions
 Email: banh.jeff@gmail.com
