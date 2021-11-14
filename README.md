@@ -25,7 +25,7 @@
 # Questions
 
 # License
- This repository is released under the [MIT License](https://opensource.org/licenses/MIT)
+ This repository is released under the
 
 https://user-images.githubusercontent.com/81596406/141670396-387b41a0-44cd-4568-9e5b-56fe84f33c96.mp4
 
